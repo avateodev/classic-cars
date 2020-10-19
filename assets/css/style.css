@@ -231,5 +231,32 @@ section.change {
 }
 
 
-
 /* --- Section 2 End --- */
+
+
+/* --- Section 3 --- */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #222;
+}
+
+.video {
+    width: 25%;
+    margin: 0 20px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 5px #111;
+    transition: all 5s;
+}
+
+.video:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 1px #111;
+}
+
+
+
+/* --- Section 3 End --- */
