@@ -156,6 +156,7 @@ section {
     margin-bottom: 30px;
     transform-origin: left;
     box-shadow: 5px 5px 10px #aaa;
+    padding: 30px 0;
     transition: left 0.5s, transform 0.5s;
 }
 
@@ -260,3 +261,69 @@ section.change {
 
 
 /* --- Section 3 End --- */
+
+
+
+/* --- Section 4 --- */
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery {
+    margin: 100px 0;
+    perspective: 100px;
+}
+
+.gallery-shelf {
+    width: 80%;
+    height: 20px;
+    background-color: rgba(32, 37, 41, 0.8);
+    margin: auto;
+    position: relative;
+    box-shadow: 10px 10px 50px #444;
+}
+
+.gallery-shelf::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(39, 44, 46, 0.7);
+    top: -40px;
+    transform: rotateX(20deg);
+    transform-origin: bottom;
+}
+
+.gallery img {
+    width: 15%;
+    position: absolute;
+    bottom: 60px;
+    transform: translateX(-50%) rotateX(0.5deg);
+    border-radius: 5px;
+    transform-origin: bottom;
+    transition: all 0.3s;
+}
+
+.gallery img:hover {
+    transform: translateX(-50%) rotateX(0);
+    box-shadow: 0 2px 3px #888;
+}
+
+.gallery-img-1 {
+    left: 30%;
+
+}
+
+
+.gallery-img-2 {
+    left: 70%;
+
+}
+
+#my-gallery {
+    margin-bottom: 130px;
+}
+/* --- Section 4 End --- */
